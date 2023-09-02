@@ -1,0 +1,153 @@
+/* LOGIN */
+body{
+    background-image: url('Images/background.jpg');
+     background-size: cover;
+ }
+ .login-card{
+     width: 520px;
+     height: 390px;
+     background-color: white;
+     margin: auto;
+     margin-top: 70px;
+     padding-left: 55px;
+ }
+ .login-card h4{
+     padding-top:30px;
+     margin-bottom: 30px;
+     margin-left: 11rem;
+     /*font-family: serif;*/
+     font-weight: bolder;
+     /*text-align: center;*/
+     font-size: 35px;
+     color: #4D4D4D;
+ }
+ input[type=text], input[type=password] {
+   width: 350px;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+ }
+ button{
+   background-color: #867070;
+   color: white;
+   padding: 10px 30px;
+   margin: 2rem 8rem;
+   border: none;
+   cursor: pointer;
+   width: 100px;
+   border-radius: 15px;
+   font-size: 16px;
+    text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-weight: 400;
+   display: inline-block;
+ }
+ button:hover{
+     background-color: #ccafaf;
+     color: #4D4D4D;
+     transition: 0.3s;
+ }
+ form{
+     padding-left: 30px;
+ }
+ 
+ .forgot-password{
+     margin-left:13rem;
+     text-decoration: none;
+     color: #666666;
+ }
+ .forgot-password:hover{
+     text-decoration: underline;
+     color: #9e8080;
+ }
+ p{
+     font-size: 15px;
+     margin-left: 5rem;
+     margin-top: 0px;
+ }
+ .sign-up{
+     text-decoration: none;
+     color: #666666;
+ }
+ .sign-up:hover{
+     text-decoration: underline;
+     color: #9e8080;
+ }
+
+ /* end of login */
+
+ /* FORGOT PASSWORD */
+ body{
+    background-image: url('Images/background.jpg');
+     background-size: cover;
+ }
+ .forgot-pass{
+     width: 520px;
+     height: 390px;
+     background-color: white;
+     margin: auto;
+     margin-top: 70px;
+     padding-left: 55px;
+     padding-right: 55px;
+ }
+ .forgot-pass h4{
+     padding-top:30px;
+     margin-bottom: 30px;
+     margin-left: 7rem;
+     font-weight: bolder;
+     font-size: 35px;
+     color: #4D4D4D;
+ }
+ .forgot-pass h5{
+    font-size: 18px;
+    font-family:serif;
+    font-weight: 500 ;
+    margin-bottom: 5%;
+}
+
+.dropdown{
+    width: 350px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  button{
+    background-color: #867070;
+    color: white;
+    padding: 10px 2px;
+    margin: 1.5rem 10rem;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 15px;
+    font-size: 16px;
+     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 400;
+  }
+  button:hover{
+      background-color: #ccafaf;
+      color: #4D4D4D;
+      transition: 0.3s;
+  }
+  .back-to-login{
+    font-size: 15px;
+    margin-left: 25%;
+    text-decoration: none;
+    color: #666666;
+}
+.back-to-login:hover{
+    text-decoration: underline;
+    color: #9e8080;
+}
+
+form{
+    padding-left: 35px;
+    padding-right: 35px;
+}

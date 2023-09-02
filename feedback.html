@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title>Beauty Blush</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="homepage-style.css">
+    </head>
+    <body class="feedback-body">
+
+<!-- NAV BAR  -->        
+
+<nav class="navbar navbar-expand-lg navbar-static-top navbar-dark gradient-custom">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Brand logo-->
+      <div class="row">
+        <div class="col-md-2 logo-img">
+        <a href="#"><img src="Images/only name.png" alt="Beauty Blush">
+        </a>
+        </div>
+  
+      <!-- Collapsible wrapper -->
+      <div class="col-md-10">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto d-flex flex-row mb-3 mb-lg-0">
+          <li class="nav-item text-center mx-4 mx-lg-4">
+            <a class="nav-link ps-2 active" aria-current="page" href="homepage.html">
+              Home
+            </a>
+          </li>
+          
+          <li>
+          <div class="dropdown">
+            <a class="dropbtn" href="#">Categories
+            </a>
+            <div class="dropdown-content">
+              <a href="makeup.html">Makeup</a>
+              <a href="HairCare.html">Hair Care</a>
+              <a href="SkinCare.html">Skin Care</a>
+              <a href="fragrance.html">Fragrance</a>
+              <a href="BodyCare.html">Body Care</a>
+            </div>
+          </div>
+        </li>
+          
+          <li class="nav-item text-center ps-2 mx-lg-1">
+            <a class="nav-link" aria-disabled="true" href="#about-us">
+             About Us
+            </a>
+          </li>
+          <li class="nav-item text-center ps-2 mx-lg-1">
+            <a class="nav-link" href="#contact-us">
+              Contact Us
+            </a>
+          </li>  
+          <li class="nav-item text-center mx-2 mx-lg-1">
+            <a class="nav-link" href="login.html">
+              Login as User
+            </a>
+          </li>
+          <li class="nav-item text-center mx-2 mx-lg-1">
+            <a class="nav-link" href="Admin.html">
+             Login as Admin
+            </a>
+          </li>
+          
+          <li>
+              <div class="dropdown">
+              <a class="dropbtn" href="#"><div class="user-profile">
+                <i class="bi bi-person-circle"></i> 
+               </div>
+              </a>
+              <div class="dropdown-content">
+                <a href="#">Edit Profile</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="#">Log Out</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+                 
+        <!-- Search form -->
+        <form class="d-flex input-group search-form" role="search">
+          <input type="search" class="form-control" placeholder="Start Searching..." aria-label="Search" /> 
+          <button class="btn btn-outline-white" type="button" data-mdb-ripple-color="dark">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- End of Navbar -->
+
+  <div class="feedback">
+    <h1>Have a question?<span style="color: #F8615A ;">&nbsp; Write to us!</span></h1>
+    <div class="border"></div>
+    <form class="feedback-form" action="http://localhost:8080/Beauty%20Blush/FeedbackServ" method="POST">
+      <input type="text" class="feedback-form-text" placeholder="Full Name" name="feed_name" id="feed_name">
+      <input type="email" class="feedback-form-text" placeholder="Email id" name="feed_email" id="feed_email">
+      <input type="text" class="feedback-form-text" placeholder="Contact Number" name="feed_num" id="feed_num">
+      <textarea type="text" class="feedback-form-text" placeholder="Your message..." name="feed_msg" id="feed_msg"></textarea>
+      <input type="submit" class="feedback-form-btn" name="feed_submit" id="feed_submit" value="Submit">
+    </form>
+    </div>
+
+
+    <!-- Footer -->
+<div class="container-fluid footer">
+    <div class="row">
+      <div class="col-md-6 footer-hero">
+      <h2>Beauty Blush</h2>
+      <p>We are Beauty Blush, the ultimate destination for all your beauty needs.  we are committed to providing our customers with the best possible shopping experience. We understand that the beauty industry is constantly evolving, which is why we are always on the lookout for the latest and greatest products to add to our collection</p>
+    </div>
+  
+    <div class="col-md-6 social-media">
+      <ul>
+      <li><a href="#" target="_blank"><i class="bi bi-facebook"></i></a></li>
+      <li><a href="#" target="_blank"><i class="bi bi-twitter"></i></a></li>
+      <li><a href="#" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+      <li><a href="#" target="_blank"><i class="bi bi-instagram"></i></a></li>
+    </ul>
+    </div>
+    </div>
+    <div class="footer-bottom">
+        <p>All Rights Reserved © 2023 beautyblush.com<span class="pull-right"></span></p>
+    </div> 
+  </div>
+  
+    <!--latest jQuery 3-->
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+<!--Bootstrap JS-->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>

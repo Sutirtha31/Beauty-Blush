@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <title>Beauty Blush</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="homepage-style.css">
+        <script>
+            function funSub(){
+                alert("Data updated successfully!");
+            }
+            </script>
+    </head>
+    <body>
+
+<!-- NAV BAR -->        
+
+<nav class="navbar navbar-expand-lg navbar-static-top navbar-dark gradient-custom">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Brand logo-->
+      <div class="row">
+        <div class="col-md-2 logo-img">
+        <a href="#"><img src="Images/only name.png" alt="Beauty Blush">
+        </a>
+        </div>
+  
+      <!-- Collapsible wrapper -->
+      <div class="col-md-10">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto d-flex flex-row mb-3 mb-lg-0">
+          <li class="nav-item text-center mx-4 mx-lg-4">
+            <a class="nav-link ps-2 active" aria-current="page" href="homepage.html">
+              Home
+            </a>
+          </li>
+          
+          <li>
+          <div class="dropdown">
+            <a class="dropbtn" href="#">Categories
+            </a>
+            <div class="dropdown-content">
+              <a href="makeup.html">Makeup</a>
+              <a href="HairCare.html">Hair Care</a>
+              <a href="SkinCare.html">Skin Care</a>
+              <a href="fragrance.html">Fragrance</a>
+              <a href="BodyCare.html">Body Care</a>
+            </div>
+          </div>
+        </li>
+          
+          <li class="nav-item text-center ps-2 mx-lg-1">
+            <a class="nav-link" aria-disabled="true" href="#about-us">
+             About Us
+            </a>
+          </li>
+          <li class="nav-item text-center ps-2 mx-lg-1">
+            <a class="nav-link" href="#contact-us">
+              Contact Us
+            </a>
+          </li>  
+          <li class="nav-item text-center mx-2 mx-lg-1">
+            <a class="nav-link" href="login.html">
+              Login as User
+            </a>
+          </li>
+          <li class="nav-item text-center mx-2 mx-lg-1">
+            <a class="nav-link" href="Admin.html">
+             Login as Admin
+            </a>
+          </li>
+          
+          <li>
+              <div class="dropdown">
+              <a class="dropbtn" href="#"><div class="user-profile">
+                <i class="bi bi-person-circle"></i> 
+               </div>
+              </a>
+              <div class="dropdown-content">
+                <a href="edit-profile.html">Edit Profile</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="#">Log Out</a>
+              </div>
+            </div>
+          </li>
+        </ul>       
+        <!-- Search form -->
+        <form class="d-flex input-group search-form" role="search">
+          <input type="search" class="form-control" placeholder="Start Searching..." aria-label="Search" /> 
+          <button class="btn btn-outline-white" type="button" data-mdb-ripple-color="dark">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- End of Navbar -->
+<body class="edit-profile-body">
+     
+        <div class="container profile-card">
+            
+            <h3 class="heading">Edit Profile</h3>
+            <div class="actions">
+                <a href="homepage.html"><h6>Back to home</h6></a>
+               </div>
+            <div class="row">
+                <div class="col-md-3 profile-pic">
+                    <img src="Images/profile avatar.png">
+                </div>
+               
+                <div class="col-md-9 profile-info">
+                    <form method="POST" action="#">
+                         <div class="row m-5">
+                            <div class="col-md-6">Username<input type="text" name="edit-username" class="form-control" placeholder="Enter Username"></div>
+                            <div class="col-md-6">Email<input type="text" name="edit-email" class="form-control" placeholder="Enter Email"></div>
+                        </div>
+                        <div class="row m-5">
+                            <div class="col-md-6">Name<input type="text" name="edit-name" class="form-control" placeholder="Enter Name"></div>
+                            <div class="col-md-6">Phone Number<input type="text" name="edit-num" class="form-control" placeholder="Enter Phone Number"></div>
+                            
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">Location<input type="text" edit="edit-location" class="form-control" placeholder="Enter Location" ></div>
+                          <div class="col-md-6">Age<input type="text" name="edit-age" class="form-control" placeholder="Enter Age"></div>  
+                              </div>
+                        <div class="row">
+                            <div class="col-md-6">Date-of-Birth<input type="text" name="edit-dob" class="form-control" placeholder="Enter Date of Birth(Eg. 02-Jan-01)"></div>
+                          <div class="form-group">
+                            <label for="fm3" 
+                                   class="form-check-label">Gender</label><br>
+                            Male<input type="radio" 
+                                       class="form-check-input" 
+                                       name="edit-gender" id="fm3" 
+                                       value="Male">
+                            Female<input type="radio" 
+                                         class="form-check-input"
+                                         name="edit-gender" id="fm3"
+                                         value="Female">
+                        </div>
+                      </div>
+                        <button class="btn profile-button" type="submit" onclick="funSub()">Save Profile</button>
+                    </form>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    <!--latest jQuery 3-->
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+<!--Bootstrap JS-->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>
