@@ -1,0 +1,270 @@
+<html>
+    <head>
+        <title>Beauty Blush</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="homepage-style.css">
+    </head>
+    <script>
+        function LogOut(){
+            alert("You've successfully logged out.");
+        }
+    </script>
+    <body>
+
+<!-- NAV BAR -->        
+
+<nav class="navbar navbar-expand-lg navbar-static-top navbar-dark gradient-custom">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Brand logo-->
+      <div class="row">
+        <div class="col-md-2 logo-img">
+        <a href="#"><img src="Images/only name.png" alt="Beauty Blush">
+        </a>
+        </div>
+  
+      <!-- Collapsible wrapper -->
+      <div class="col-md-10">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto d-flex flex-row mb-3 mb-lg-0">
+          <li class="nav-item text-center mx-4 mx-lg-4">
+            <a class="nav-link ps-2 active" aria-current="page" href="homepage.html">
+              Home
+            </a>
+          </li>
+          
+          <li>
+          <div class="dropdown">
+            <a class="dropbtn" href="#">Categories
+            </a>
+            <div class="dropdown-content">
+              <a href="makeup.html">Makeup</a>
+              <a href="HairCare.html">Hair Care</a>
+              <a href="SkinCare.html">Skin Care</a>
+              <a href="fragrance.html">Fragrance</a>
+              <a href="BodyCare.html">Body Care</a>
+            </div>
+          </div>
+        </li>
+          
+          <li class="nav-item text-center ps-2 mx-lg-1">
+            <a class="nav-link" aria-disabled="true" href="#about-us">
+             About Us
+            </a>
+          </li>
+          <li class="nav-item text-center ps-2 mx-lg-1">
+            <a class="nav-link" href="#contact-us">
+              Contact Us
+            </a>
+          </li>  
+          <li class="nav-item text-center mx-2 mx-lg-1">
+            <a class="nav-link" href="login.html">
+              Login as User
+            </a>
+          </li>
+          <li class="nav-item text-center mx-2 mx-lg-1">
+            <a class="nav-link" href="Admin.html">
+             Login as Admin
+            </a>
+          </li>
+          
+          <li>
+              <div class="dropdown">
+              <a class="dropbtn" href="#"><div class="user-profile">
+                <i class="bi bi-person-circle"></i> 
+               </div>
+              </a>
+              <div class="dropdown-content">
+                <a href="EditProfile.html">Edit Profile</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="login.html" onclick="LogOut()">Log Out</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        
+                 
+        <!-- Search form -->
+        <form class="d-flex input-group search-form" role="search">
+          <input type="search" class="form-control" placeholder="Start Searching..." aria-label="Search" /> 
+          <button class="btn" type="button" data-mdb-ripple-color="dark">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- End of Navbar -->
+
+
+<!-- Carousel -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4300">
+
+<ol class="carousel-indicators">
+<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+<li data-target="#myCarousel" data-slide-to="1"></li>
+<li data-target="#myCarousel" data-slide-to="2"></li>
+<!-- <li data-target="#myCarousel" data-slide-to="3"></li> -->
+</ol>
+
+<!-- Wrapper for slides -->
+
+<div class="carousel-inner" role="listbox">
+<div class="item active">
+<img src="Images/banner 4.png" alt="Banner 1">
+</div>
+
+<div class="item">
+<img src="Images/banner 2.jpg" alt="Banner 2">
+</div>
+
+<div class="item">
+<img src="Images//banner 3.png" alt="Banner 3">
+</div>
+
+<!-- <div class="item">
+  <img src="Images/banner 1.jpg" alt="Banner4">
+  </div> -->
+</div>
+<!-- Left and right controls -->
+
+<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+<span class="sr-only">Previous</span> </a> 
+<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+<span class="sr-only">Next</span> </a>
+</div>
+
+<!-- ABOUT US -->
+<div class="container-fluid" id="about-us">
+  <h3><span style="color: #F8615A ;">About</span> Us</h3>
+  <div class="row">
+    <div class="col-md-4 about-us-img">
+      <img src="Images/logo 1.jpg" alt="logo">
+    </div>
+
+    <div class="col-md-8 about-us-body">
+      <p>We are Beauty Blush, the ultimate destination for all your beauty needs! We are a beauty e-commerce website started with a goal to provide you with a one-stop-shop for all your beauty essentials, from skincare and makeup to haircare and fragrances. Our team of beauty experts has carefully curated a selection of high-quality products from some of the most popular and trusted brands in the industry. At Beauty Blush, we are committed to providing our customers with the best possible shopping experience. We understand that the beauty industry is constantly evolving, which is why we are always on the lookout for the latest and greatest products to add to our collection. Whether you're looking for a new moisturizer, a bold lipstick, or a signature scent, we've got you covered.</p>
+    </div>
+  </div>
+</div>
+
+<!-- OUR TEAM -->
+<div class="container-fluid" id="meet-team">
+  <h3>Meet Our <span style="color:#F8615A ;">Team</span></h3>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card" style="width: 30rem;">
+        <img class="card-img-top" src="Images/team 1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text" style="margin-left: 65px;">SHWETA SHARMA</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 30rem;">
+        <img class="card-img-top" src="Images/team 2.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text" style="margin-left: 60px;">SUTIRTHA SAMANTA</p>
+        </div>
+      </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card" style="width: 30rem;">
+          <img class="card-img-top" src="Images/team3.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text" style="margin-left: 85px;">SUKANYA DEY</p>
+          </div>
+        </div>
+              </div>
+  </div>
+</div>
+
+<!-- VISION -->
+<div class="container-fluid vision" id="vision">
+  <div class="row">
+   <div class="col-auto vision-hero">
+     <h1>Our Vision</h1>
+     <hr>
+   </div>
+     <div class="col-xs-4 col-md-9 vision-text"><p> At Beauty Blush, our vision is to empower individuals to express themselves creatively and confidently through the art of makeup. We believe that makeup is not just about enhancing one's physical appearance, but also about creating a personal statement and boosting self-esteem.
+      Our goal is to provide high-quality, cruelty-free products that cater to a diverse range of skin tones, textures, and types. We believe in inclusivity and strive to create a brand that celebrates individuality and encourages self-expression. We at Beauty Blush believe that beauty should not come at the expense of ethics, inclusivity, or sustainability. We are committed to creating a brand that embodies these values and promotes self-love and creativity.    </p>   
+     </div>
+     </div>
+</div>
+
+<!-- CONTACT US -->
+
+  <div class="container contact-us" id="contact-us">
+    <h1 class="contact-us-hero"><span style="color: #F8615A ;">Contact</span> Us</h1>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="map">
+            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.099725595568!2d88.48011247480122!3d22.57537317948976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275a6e9befc09%3A0xb8faf8f39cdb78a7!2sCandor%20Tech%20Space!5e0!3m2!1sen!2sin!4v1682116167257!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="contact-text">
+            <h2><i class="bi bi-geo-alt-fill"></i> &nbsp; Address</h2>
+            <p>&nbsp;DH Block(Action Area I)<br>&nbsp;Newtown, Kolkata<br>&nbsp;West Bengal 700156
+            </p>
+            <h2><i class="bi bi-telephone-fill"></i>&nbsp; Contact Number</h2>
+            <p><a href="tel:+91 9876543210">+91 9876543210</a></p>
+            <h2><i class="bi bi-envelope-fill"></i> &nbsp; E-mail</h2>
+            <p><a href = "mailto: abc@example.com">beautyblush@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- BANNER -->
+  <div class="container-fluid banner" id="banner">
+     <div class="col-auto banner-hero">
+       <p>Looking for a perfect deal? Look no further! For today only, we're offering 20% off all of our top-selling makeup products. Whether you're in need of a new foundation, lipstick, or eyeshadow palette, we've got you covered! </p>
+     </div>
+       </div>
+
+
+<!-- Footer -->
+<div class="container-fluid footer">
+  <div class="row">
+    <div class="col-md-6 footer-hero">
+    <h2>Beauty Blush</h2>
+    <p>We are Beauty Blush, the ultimate destination for all your beauty needs.  we are committed to providing our customers with the best possible shopping experience. We understand that the beauty industry is constantly evolving, which is why we are always on the lookout for the latest and greatest products to add to our collection</p>
+  </div>
+
+  <div class="col-md-6 social-media">
+    <ul>
+    <li><a href="#" target="_blank"><i class="bi bi-facebook"></i></a></li>
+    <li><a href="#" target="_blank"><i class="bi bi-twitter"></i></a></li>
+    <li><a href="#" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+    <li><a href="#" target="_blank"><i class="bi bi-instagram"></i></a></li>
+  </ul>
+  </div>
+  </div>
+  <div class="footer-bottom">
+      <p>All Rights Reserved © 2023 beautyblush.com<span class="pull-right"></span></p>
+  </div> 
+</div>
+
+
+<!--latest jQuery 3-->
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+<!--Bootstrap JS-->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,289 @@
+<html>
+    <head>
+        <title>Beauty Blush</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="homepage-style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="Cart.html">
+    </head>
+
+
+     <!-- CART -->
+     <div class="cart" id="your-cart" data-toggle="collapse" aria-expanded="false">
+      <h2 class="cart-title">YOUR CART</h2>
+      <!--Content-->
+      <div class="cart-content">
+          <div class="cart-box">
+              <img src="Images/Bodypro1.png" alt="" class="cart-img">
+              <div class="detail-box">
+                  <div class="cart-product-title">Pears Body Wash Combo</div>
+                  <div class="cart-price">$661</div>
+                  <input type="number" value="1" class="cart-quantity">
+              </div>
+              <!--Remove Cart-->
+              <i class='bx bxs-trash-alt cart-remove'></i>
+          </div>
+      </div>
+      <!--total-->
+      <div class="total">
+          <div class="total-title">total</div>
+          <div class="total-price">0</div>
+      </div>
+  
+      <!-- Buy Button-->
+      <button type="button" class="btn-buy">Buy Now</button>
+      <!--cart close-->
+      <i class='bx bx-x' id="close-cart" onclick="closeNav()"></i>
+    </div>
+
+    <body id="makeup-page-body" >
+        <!-- NAV BAR -->
+
+        <nav class="navbar navbar-expand-lg navbar-static-top navbar-dark gradient-custom">
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+              <!-- Brand logo-->
+              <div class="row">
+                <div class="col-md-2 logo-img">
+                <a href="#"><img src="Images/only name.png" alt="Beauty Blush">
+                </a>
+                </div>
+          
+              <!-- Collapsible wrapper -->
+              <div class="col-md-10">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto d-flex flex-row mb-3 mb-lg-0">
+                  <li class="nav-item text-center mx-4 mx-lg-4">
+                    <a class="nav-link ps-2 active" aria-current="page" href="homepage.html">
+                      Home
+                    </a>
+                  </li>
+                  
+                  <li>
+                  <div class="dropdown">
+                    <a class="dropbtn" href="#">Categories
+                    </a>
+                    <div class="dropdown-content">
+                      <a href="makeup.html">Makeup</a>
+                      <a href="HairCare.html">Hair Care</a>
+                      <a href="SkinCare.html">Skin Care</a>
+                      <a href="fragrance.html">Fragrance</a>
+                      <a href="BodyCare.html">Body Care</a>
+                    </div>
+                  </div>
+                </li>
+                  
+                  <li class="nav-item text-center ps-2 mx-lg-1">
+                    <a class="nav-link" aria-disabled="true" href="#about-us">
+                     About Us
+                    </a>
+                  </li>
+                  <li class="nav-item text-center ps-2 mx-lg-1">
+                    <a class="nav-link" href="#">
+                      Contact Us
+                    </a>
+                  </li>  
+                  <li class="nav-item text-center mx-2 mx-lg-1">
+                    <a class="nav-link" href="index.html">
+                      Login as User
+                    </a>
+                  </li>
+                  <li class="nav-item text-center mx-2 mx-lg-1">
+                    <a class="nav-link" href="#!">
+                     Login as Admin
+                    </a>
+                  </li>
+
+                  <li>
+                    <div class="dropdown">
+                    <a class="dropbtn" href="#"><div class="user-profile">
+                      <i class="bi bi-person-circle"></i> 
+                     </div>
+                    </a>
+                    <div class="dropdown-content">
+                      <a href="#">Edit Profile</a>
+                      <a href="#" id="cart-icon">Your Cart</a>
+                      <a href="#">Feedback</a>
+                      <a href="#">Log Out</a>
+                    </div>
+                  </div>
+                </li>
+                </ul>
+
+                <!-- <i class='bx bx-shopping-bag' id="cart-icon"></i> -->
+        
+                <!-- Search form -->
+                <!-- <i class="bi bi-person"></i> -->
+                <form class="d-flex input-group search-form" role="search">
+                  <input type="search" class="form-control" placeholder="Start Searching..." aria-label="Search" /> 
+                  <button class="btn btn-outline-white" type="button" data-mdb-ripple-color="dark">
+                    Search
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+<!-- Products -->
+<div class="container-fluid products">
+        <div class="makeup" >
+                <h1>B O D Y C A R E</h1>
+                <h4>Choose from thousands of products carefully curated just for you. Happy Shopping!</h4>
+        </div>
+<hr style="height: 0.3px; background-color: black; border: none;">
+        <div class="row">
+                  <div class="col-md-4">
+                    <div class="card product-card product-box" style="width: 35rem;">
+                <img src="Images/Bodypro1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Pears Body Wash Combo</h5>
+                  <p class="card-text price">MRP: ₹361/-</p>
+                 <a href="#" style="text-decoration: none; color: black;"><p id="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></p></a> 
+                     <a href="#" class="btn mr-2 cart-btn"><i class="bi bi-bag-check add-cart" onclick="openNav()"></i>Add to Cart</a>
+                  <a href="#" class="btn buy-now"><i class="bi bi-cart-check"></i>Buy Now</a>
+                </div>
+                </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card product-card" style="width: 35rem;">
+              <img src="Images/Bodypro2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Coffee Body Scrub</h5>
+                <p class="card-text price">MRP: ₹399/-</p>
+               <a href="#" style="text-decoration: none; color: black;"><p id="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></p></a> 
+                   <a href="#" class="btn mr-2 cart-btn"><i class="bi bi-bag-check"></i>Add to Cart</a>
+                <a href="#" class="btn buy-now"><i class="bi bi-cart-check"></i>Buy Now</a>
+              </div>
+              </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card product-card" style="width: 35rem;">
+            <img src="Images/Bodypro3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Fiama Gel Bathing Bar</h5>
+              <p class="card-text price">MRP: ₹510/-</p>
+             <a href="#" style="text-decoration: none; color: black;"><p id="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></p></a> 
+                 <a href="#" class="btn mr-2 cart-btn"><i class="bi bi-bag-check"></i>Add to Cart</a>
+              <a href="#" class="btn buy-now"><i class="bi bi-cart-check"></i>Buy Now</a>
+            </div>
+            </div>
+            </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="card product-card" style="width: 35rem;">
+<img src="Images/Bodypro4.png" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">NIVEA Nourishing Body Milk Lotion </h5>
+  <p class="card-text price">MRP: ₹500/-</p>
+ <a href="#" style="text-decoration: none; color: black;"><p id="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></p></a> 
+     <a href="#" class="btn mr-2 cart-btn"><i class="bi bi-bag-check"></i>Add to Cart</a>
+  <a href="#" class="btn buy-now"><i class="bi bi-cart-check"></i>Buy Now</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+  <div class="card product-card" style="width: 35rem;">
+<img src="Images/Bodypro5.png" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Gillette Venus Snap Hair Remover Women Body Razor</h5>
+<p class="card-text price">MRP: ₹319/-</p>
+<a href="#" style="text-decoration: none; color: black;"><p id="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></p></a> 
+   <a href="#" class="btn mr-2 cart-btn"><i class="bi bi-bag-check"></i>Add to Cart</a>
+<a href="#" class="btn buy-now"><i class="bi bi-cart-check"></i>Buy Now</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card product-card" style="width: 35rem;">
+<img src="Images/Bodypro6.png" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Be Bodywise 1% Salicylic Acid Body Wash </h5>
+<p class="card-text price">MRP: ₹774/-</p>
+<a href="#" style="text-decoration: none; color: black;"><p id="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></p></a> 
+ <a href="#" class="btn mr-2 cart-btn"><i class="bi bi-bag-check"></i>Add to Cart</a>
+<a href="#" class="btn buy-now"><i class="bi bi-cart-check"></i>Buy Now</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="card product-card" style="width: 35rem;">
+<img src="Images/Bodypro7.png" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Dove Exfoliating Body Polish Scrub</h5>
+  <p class="card-text price">MRP: ₹580/-</p>
+ <a href="#" style="text-decoration: none; color: black;"><p id="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></p></a> 
+     <a href="#" class="btn mr-2 cart-btn"><i class="bi bi-bag-check"></i>Add to Cart</a>
+  <a href="#" class="btn buy-now"><i class="bi bi-cart-check"></i>Buy Now</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+  <div class="card product-card" style="width: 35rem;">
+<img src="Images/Bodypro8.png" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Plum Body Oil</h5>
+<p class="card-text price">MRP: ₹495/-</p>
+<a href="#" style="text-decoration: none; color: black;"><p id="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></p></a> 
+   <a href="#" class="btn mr-2 cart-btn"><i class="bi bi-bag-check"></i>Add to Cart</a>
+<a href="#" class="btn buy-now"><i class="bi bi-cart-check"></i>Buy Now</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card product-card" style="width: 35rem;">
+<img src="Images/Bodypro9.png" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Yardley London Morning Dew Fragrant Beauty Talc</h5>
+<p class="card-text price">MRP: ₹230/-</p>
+<a href="#" style="text-decoration: none; color: black;"><p id="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></p></a> 
+ <a href="#" class="btn mr-2 cart-btn"><i class="bi bi-bag-check"></i>Add to Cart</a>
+<a href="#" class="btn buy-now"><i class="bi bi-cart-check"></i>Buy Now</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid footer">
+  <div class="row">
+    <div class="col-md-6 footer-hero">
+    <h2>Beauty Blush</h2>
+    <p>We are Beauty Blush, the ultimate destination for all your beauty needs.  we are committed to providing our customers with the best possible shopping experience. We understand that the beauty industry is constantly evolving, which is why we are always on the lookout for the latest and greatest products to add to our collection</p>
+  </div>
+
+  <div class="col-md-6 social-media">
+    <ul>
+    <li><a href="#" target="_blank"><i class="bi bi-facebook"></i></a></li>
+    <li><a href="#" target="_blank"><i class="bi bi-twitter"></i></a></li>
+    <li><a href="#" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+    <li><a href="#" target="_blank"><i class="bi bi-instagram"></i></a></li>
+  </ul>
+  </div>
+  </div>
+  <div class="footer-bottom">
+      <p>All Rights Reserved © 2023 beautyblush.com<span class="pull-right"></span></p>
+  </div> 
+</div>
+<!--latest jQuery 3-->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+<!--Bootstrap JS-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="Mainscript.js"></script>
+</body>
+</html>
